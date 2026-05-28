@@ -1,0 +1,12 @@
+/* This makes everything look nice */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #0B0F1A;
+  color: white;
+  font-family: Arial, sans-serif;
+}

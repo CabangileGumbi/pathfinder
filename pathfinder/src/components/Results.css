@@ -1,0 +1,151 @@
+/* src/components/Results.css */
+
+.results-container {
+  min-height: 100vh;
+  background: #0B0F1A;
+}
+
+.results-nav {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem 2rem;
+  border-bottom: 1px solid #252D45;
+}
+
+.results-logo {
+  font-size: 1.3rem;
+  font-weight: bold;
+  background: linear-gradient(135deg, #4FD1A5, #7B8CFF);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.results-label {
+  color: #7B85A8;
+  font-size: 0.8rem;
+  margin-left: auto;
+}
+
+.results-content {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.results-hero {
+  text-align: center;
+  margin-bottom: 2.5rem;
+}
+
+.results-hero h2 {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+.results-hero p {
+  color: #7B85A8;
+}
+
+.careers-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 1rem;
+  margin-bottom: 2.5rem;
+}
+
+.career-card {
+  background: #141828;
+  border: 1px solid #252D45;
+  border-radius: 1rem;
+  padding: 1.5rem;
+  transition: transform 0.2s;
+}
+
+.career-card:hover {
+  transform: translateY(-3px);
+  border-color: #7B8CFF;
+}
+
+.career-icon {
+  font-size: 2.5rem;
+  margin-bottom: 0.75rem;
+}
+
+.career-card h3 {
+  font-size: 1.1rem;
+  margin-bottom: 0.25rem;
+}
+
+.career-meta {
+  font-size: 0.7rem;
+  color: #4FD1A5;
+  margin-bottom: 0.75rem;
+}
+
+.career-desc {
+  font-size: 0.85rem;
+  color: #7B85A8;
+  line-height: 1.5;
+}
+
+.courses-section {
+  background: #141828;
+  border: 1px solid #7B8CFF;
+  border-radius: 1rem;
+  padding: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.courses-section h3 {
+  font-size: 1.1rem;
+  margin-bottom: 0.5rem;
+  color: #7B8CFF;
+}
+
+.courses-section p {
+  font-size: 0.85rem;
+  color: #7B85A8;
+  margin-bottom: 1rem;
+}
+
+.course-pills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+}
+
+.course-pill {
+  background: rgba(123, 140, 255, 0.1);
+  border: 1px solid rgba(123, 140, 255, 0.3);
+  color: #7B8CFF;
+  padding: 0.5rem 1rem;
+  border-radius: 99px;
+  font-size: 0.8rem;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.course-pill:hover {
+  background: rgba(123, 140, 255, 0.2);
+}
+
+.retake-section {
+  text-align: center;
+  margin-top: 1.5rem;
+}
+
+.retake-btn {
+  background: none;
+  border: 1px solid #252D45;
+  color: #7B85A8;
+  padding: 0.7rem 1.5rem;
+  border-radius: 99px;
+  cursor: pointer;
+  font-size: 0.85rem;
+}
+
+.retake-btn:hover {
+  border-color: #4FD1A5;
+  color: #4FD1A5;
+}
