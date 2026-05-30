@@ -1,0 +1,50 @@
+.site-logo {
+  display: block;
+}
+
+.site-logo-site-logo-large,
+.site-logo-large {
+  width: 260px;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+.site-logo-site-logo-medium,
+.site-logo-medium {
+  width: 120px;
+  height: auto;
+}
+
+.site-logo-site-logo-small,
+.site-logo-small {
+  width: 72px;
+  height: 72px;
+  position: fixed;
+  top: 16px;
+  left: 88px; /* offset to avoid left-side buttons (home, nav) */
+  z-index: 9999;
+  border-radius: 10px;
+  box-shadow: 0 6px 18px rgba(11,15,26,0.45);
+  background: #ffffffcc;
+  overflow: hidden;
+}
+
+.site-logo-link { 
+  display: inline-block;
+  background: transparent;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+}
+
+@media (max-width: 1024px) {
+  .site-logo-large { width: 200px; }
+  .site-logo-small { width: 56px; height: 56px; top: 12px; left: 72px; }
+}
+
+@media (max-width: 768px) {
+  .site-logo-large { width: 180px; }
+  /* On narrow screens place the logo nearer the edge to avoid overlap */
+  .site-logo-small { width: 48px; height: 48px; top: 12px; left: 12px; }
+}

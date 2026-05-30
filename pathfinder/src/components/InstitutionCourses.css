@@ -1,0 +1,238 @@
+/* src/components/InstitutionCourses.css */
+
+.inst-courses {
+  min-height: 100vh;
+  background: #0B0F1A;
+  padding: 3rem 2rem;
+  position: relative;
+}
+
+/* Background glow effects like homepage */
+.inst-courses::before {
+  content: '';
+  position: absolute;
+  width: 400px;
+  height: 400px;
+  background: radial-gradient(circle, rgba(123, 140, 255, 0.08) 0%, transparent 70%);
+  border-radius: 50%;
+  top: 10%;
+  right: -100px;
+  pointer-events: none;
+}
+
+.courses-header {
+  text-align: center;
+  margin-bottom: 3rem;
+  position: relative;
+  z-index: 1;
+  padding-bottom: 2rem;
+  border-bottom: 2px solid rgba(79, 209, 165, 0.2);
+}
+
+.page-logo {
+  margin: 0 auto 1.5rem;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 0.5rem 0.75rem;
+  border-radius: 999px;
+  background: rgba(79, 209, 165, 0.08);
+  border: 1px solid rgba(79, 209, 165, 0.12);
+}
+
+.small-logo-block .small-logo-mark {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #4FD1A5, #7B8CFF);
+  color: #0B0F1A;
+  font-size: 0.85rem;
+  font-weight: 700;
+}
+
+.small-logo-block .small-logo-text {
+  color: #F0F2FF;
+  font-size: 0.95rem;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+}
+
+.back-btn {
+  background: none;
+  border: 1px solid #252D45;
+  color: #7B85A8;
+  padding: 0.5rem 1rem;
+  border-radius: 2rem;
+  cursor: pointer;
+  font-size: 0.8rem;
+  margin-bottom: 1.5rem;
+  transition: all 0.2s;
+}
+
+.back-btn:hover {
+  border-color: #4FD1A5;
+  color: #4FD1A5;
+}
+
+.inst-title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.inst-emoji {
+  font-size: 2.5rem;
+}
+
+.inst-title h1 {
+  font-size: 2.2rem;
+  color: #F0F2FF;
+  font-weight: 700;
+  letter-spacing: -0.5px;
+}
+
+.inst-info {
+  color: #7B85A8;
+  font-size: 0.95rem;
+  margin-bottom: 0.5rem;
+  letter-spacing: 0.3px;
+}
+
+.inst-established, .inst-website {
+  color: #7B85A8;
+  font-size: 0.85rem;
+}
+
+.courses-search {
+  max-width: 600px;
+  margin: 0 auto 2.5rem;
+  position: relative;
+  z-index: 1;
+}
+
+.courses-search .search-input {
+  width: 100%;
+  padding: 1rem;
+  background: #141828;
+  border: 1px solid #252D45;
+  border-radius: 12px;
+  color: white;
+  font-size: 1rem;
+  transition: all 0.2s;
+}
+
+.courses-search .search-input:focus {
+  outline: none;
+  border-color: #4FD1A5;
+  background: #0B0F1A;
+}
+
+.courses-count {
+  text-align: center;
+  color: #7B85A8;
+  font-size: 0.9rem;
+  margin-bottom: 2.5rem;
+  position: relative;
+  z-index: 1;
+}
+
+.faculties-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 1;
+}
+
+.faculty-section {
+  margin-bottom: 3rem;
+}
+
+.faculty-title {
+  font-size: 1.3rem;
+  color: #4FD1A5;
+  margin-bottom: 1.5rem;
+  padding-bottom: 1rem;
+  border-bottom: 2px solid rgba(79, 209, 165, 0.3);
+  font-weight: 600;
+  letter-spacing: 0.3px;
+}
+
+.courses-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 1rem;
+}
+
+.course-item {
+  background: #141828;
+  border: 1px solid #252D45;
+  border-radius: 10px;
+  padding: 1.2rem;
+  font-size: 0.9rem;
+  color: #E0E0E0;
+  transition: all 0.3s;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.course-item::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(135deg, rgba(79, 209, 165, 0.06), transparent);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  pointer-events: none;
+}
+
+.course-item:hover {
+  border-color: #4FD1A5;
+  background: #141828;
+  transform: translateY(-3px);
+}
+
+.course-item:hover::before {
+  opacity: 1;
+}
+
+.courses-list {
+  max-width: 1200px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 1;
+}
+
+.no-courses {
+  text-align: center;
+  padding: 4rem 2rem;
+  color: #7B85A8;
+  font-size: 1rem;
+}
+
+@media (max-width: 768px) {
+  .inst-courses {
+    padding: 2rem 1rem;
+  }
+  
+  .inst-title h1 {
+    font-size: 1.5rem;
+  }
+  
+  .inst-title {
+    gap: 0.5rem;
+  }
+  
+  .inst-emoji {
+    font-size: 1.8rem;
+  }
+  
+  .courses-grid {
+    grid-template-columns: 1fr;
+  }
+}

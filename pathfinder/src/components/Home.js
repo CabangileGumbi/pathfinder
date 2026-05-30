@@ -2,6 +2,7 @@
 // This is the HOME screen component
 
 import './Home.css';
+import SiteLogo from './SiteLogo';
 
 function Home(props) {
   // This function will run when someone clicks "Start Quiz"
@@ -20,8 +21,10 @@ function Home(props) {
       <div className="home-glow"></div>
       <div className="home-glow2"></div>
 
-      <h1 className="logo">PathFinder</h1>
-      <div className="logo-sub">Career Guidance for South African Learners</div>
+      {/* New CareerGuide Logo - Large size */}
+      <div className="home-logo-wrapper">
+        <SiteLogo size="large" />
+      </div>
 
       <p className="home-headline">
         You don't need to figure out your future alone.

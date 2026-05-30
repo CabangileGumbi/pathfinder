@@ -1,6 +1,7 @@
 // src/components/Quiz.js
 import { useState } from 'react';
 import './Quiz.css';
+import SiteLogo from './SiteLogo';
 
 // This is ALL our quiz questions
 const QUESTIONS = [
@@ -118,6 +119,7 @@ function Quiz({ onSubmit, onBack }) {
 
   return (
     <div className="quiz-container">
+      <SiteLogo size="small" />
       {/* Navigation Bar */}
       <div className="quiz-nav">
         <button className="back-btn" onClick={onBack}>← Home</button>

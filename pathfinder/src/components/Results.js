@@ -1,5 +1,6 @@
 // src/components/Results.js
 import './Results.css';
+import SiteLogo from './SiteLogo';
 
 // Sample career data
 const CAREERS = [
@@ -91,6 +92,7 @@ function Results({ answers, onViewCourse, onRetakeQuiz }) {
 
   return (
     <div className="results-container">
+      <SiteLogo size="small" />
       {/* Navigation */}
       <div className="results-nav">
         <button className="back-btn" onClick={onRetakeQuiz}>← Retake Quiz</button>
